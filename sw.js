@@ -1,7 +1,7 @@
 // Keeps the app usable offline. Network first, so updates on GitHub show up right away;
 // the cached copy is only used when there is no connection.
-const CACHE = 'collage-v1';
-const FILES = ['./', './index.html', './manifest.webmanifest', './apple-touch-icon.png', './icon-192.png', './icon-512.png'];
+const CACHE = 'collage-v2';
+const FILES = ['./', './index.html', './manifest.webmanifest', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './icon-192-round.png', './icon-512-round.png', './favicon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
